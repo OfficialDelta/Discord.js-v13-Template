@@ -32,7 +32,7 @@ client.on('interactionCreate', async interaction => {
     }
 })
 
-// Non-slash commands, only recommended for 
+// Non-slash commands, only recommended for deploy commands
 client.on('messageCreate', async message => {
     // filters out bots and non-prefixed messages
     if (!message.content.startsWith(prefix) || message.author.bot) return
