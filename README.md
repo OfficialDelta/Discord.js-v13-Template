@@ -9,8 +9,9 @@ This repo is a quick-start template for Discord.js v13 that includes command han
 1. Click `Use this template` on [the github repo](https://github.com/TSLARoadster/Discord.js-v13-Template) 
 2. Make a new repo using the template
 3. Update any info in the `package.json`
-3. Run `npm install` in the directory to install all the dependancies
-4. Make your bot!
+4. Run `npm install` in the directory to install all the dependancies
+5. Fill out `config.json`
+6. Make your bot! (Be sure to deploy all slash commands before trying to execute them!)
 
 ## Links
 
