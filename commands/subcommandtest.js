@@ -6,7 +6,6 @@ module.exports = {
             name: 'test',
             type: 'SUB_COMMAND',
             description: 'a test sub command',
-            required: true,
             options: [
                 {
                     name: 'input',
