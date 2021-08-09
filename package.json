@@ -1,0 +1,23 @@
+{
+  "name": "discord.js-v13-template",
+  "version": "1.0.0",
+  "description": "This repo is a quick-start template for Discord.js v13 that includes command handling, slash commands, and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSLARoadster/Discord.js-v13-Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TSLARoadster/Discord.js-v13-Template/issues"
+  },
+  "homepage": "https://github.com/TSLARoadster/Discord.js-v13-Template#readme",
+  "dependencies": {
+    "discord.js": "^13.0.1"
+  }
+}
