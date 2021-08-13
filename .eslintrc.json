@@ -9,5 +9,8 @@
         "ecmaVersion": 12
     },
     "rules": {
+    },
+    "globals": {
+        "client": "writable"
     }
 }

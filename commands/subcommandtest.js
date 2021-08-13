@@ -26,7 +26,7 @@ module.exports = {
             })
         } else {
             try {
-                const command = require(`../subcommands/subcommandtest/${commandName}`)
+                const command = require(`../subCommands/subcommandtest/${commandName}`)
                 command.execute(interaction)
             } catch (error) {
                 console.error(error)
