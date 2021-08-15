@@ -19,9 +19,9 @@ module.exports = {
 
             // loop through each file and filter for the command and permissions data
             for (const file of files) {
-                delete require.cache[require.resolve(`./commands/${file}`)]
+                delete require.cache[require.resolve(`../commands/${file}`)]
 
-                const commandInfo = require(`./commands/${file}`)
+                const commandInfo = require(`../commands/${file}`)
 
                 permissionsData.push({
                     name: commandInfo.name,
@@ -63,9 +63,9 @@ module.exports = {
 
             // loop through each file and filter for the command and permissions data
             for (const file of files) {
-                delete require.cache[require.resolve(`./commands/${file}`)]
+                delete require.cache[require.resolve(`../commands/${file}`)]
 
-                const commandInfo = require(`./commands/${file}`)
+                const commandInfo = require(`../commands/${file}`)
 
                 permissionsData.push({
                     name: commandInfo.name,
