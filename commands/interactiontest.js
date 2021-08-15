@@ -36,7 +36,8 @@ module.exports = {
                     ])
             ])
 
-        const msg = await interaction.reply({ content: 'Interactions Test!', components: [row1, row2] })
+        await interaction.reply({ content: 'Interactions Test!', components: [row1, row2] })
+        const msg = await interaction.fetchReply()
 
         const filter = i => i.interaction.user.id === interaction.user.id
 
