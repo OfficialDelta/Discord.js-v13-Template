@@ -1,8 +1,8 @@
 const { MessageActionRow, MessageButton, MessageSelectMenu } = require('discord.js')
 
 module.exports = {
-    name: 'buttonstest',
-    description: 'A test command for buttons',
+    name: 'interactiontest',
+    description: 'A test command for interactions',
     async execute(interaction) {
         const row = new MessageActionRow()
             .addComponents([
