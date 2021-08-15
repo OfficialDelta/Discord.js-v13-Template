@@ -61,7 +61,7 @@ client.on('messageCreate', async message => {
     if (!command) return
 
     try {
-        client.msgCommands.get(command).execute(message, args)
+        command.execute(message, args)
     } catch (error) {
         console.error(error)
     }
