@@ -1,6 +1,7 @@
 const { Client, Intents, Collection } = require('discord.js')
 const { readdirSync } = require('fs')
-const { token, prefix } = require('./config.json')
+const { token } = require('./config.json') || process.env
+const { prefix } = require('./config.json')
 
 // Discord client object
 global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES], partials: ['CHANNEL'] })
