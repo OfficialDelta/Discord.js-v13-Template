@@ -1,4 +1,6 @@
-module.exports = {
+const SlashCommand = require('../templates/SlashCommand')
+
+module.exports = new SlashCommand({
     name: 'subcommandtest',
     description: 'Test for sub commands',
     options: [
@@ -37,4 +39,4 @@ module.exports = {
             }
         }
     },
-}
+})

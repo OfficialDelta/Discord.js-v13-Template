@@ -1,4 +1,6 @@
-module.exports = {
+const MessageCommand = require('../templates/MessageCommand')
+
+module.exports = new MessageCommand({
     name: 'ping', // command name
     description: 'Ping!', // command description
     async execute(message, args) {
@@ -6,4 +8,4 @@ module.exports = {
         // for example:
         await message.channel.send('Pong.')
     },
-}
+})

@@ -1,6 +1,7 @@
 const { MessageActionRow, MessageButton, MessageSelectMenu } = require('discord.js')
+const SlashCommand = require('../templates/SlashCommand')
 
-module.exports = {
+module.exports = new SlashCommand({
     name: 'buttonstest',
     description: 'A test command for buttons',
     async execute(interaction) {
@@ -46,4 +47,4 @@ module.exports = {
             msg.edit(`The collector ended for reason \`${reason}\`! You collected ${collected.size} interactions!`)
         })
     },
-}
+})
