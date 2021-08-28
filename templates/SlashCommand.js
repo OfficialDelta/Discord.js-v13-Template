@@ -3,7 +3,7 @@ const BaseCommand = require('./BaseCommand')
 /**
  * Represents a Slash Command
  */
-class SlashCommand extends BaseCommand {
+module.exports = class SlashCommand extends BaseCommand {
     /**
      * @param {{name: String, description: String, permissions: {id: String, type: ('USER'|'ROLE'), permission: Boolean}[], options: {name: String, description: String, type: ('SUB_COMMAND'|'SUB_COMMAND_GROUP'|'STRING'|'INTEGER'|'NUMBER'|'BOOLEAN'|'USER'|'CHANNEL'|'ROLE'|'MENTIONABLE'), required: Boolean}[], execute: Function}} options - The options for the slash command
      */
@@ -26,5 +26,3 @@ class SlashCommand extends BaseCommand {
         this.options = options
     }
 }
-
-module.exports = SlashCommand

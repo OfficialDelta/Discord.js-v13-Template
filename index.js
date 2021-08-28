@@ -3,7 +3,7 @@ const { readdirSync } = require('fs')
 const { token, prefix } = require('./config.json')
 
 // Discord client object
-global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES] })
+global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES], partials: ['CHANNEL'] })
 
 // Set each command in the commands folder as a command in the client.commands collection
 client.commands = new Collection()
@@ -61,7 +61,7 @@ client.on('messageCreate', async message => {
     if (!command) return
 
     try {
-        client.msgCommands.get(command).execute(message, args)
+        command.execute(message, args)
     } catch (error) {
         console.error(error)
     }

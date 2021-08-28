@@ -7,6 +7,7 @@ module.exports = new MessageCommand({
     description: 'Deploys the slash commands',
     async execute(message, args) {
         if (message.author.id !== client.application?.owner.id) return
+
         if (args.length < 1)
             return message.reply(
                 `Incorrect number of arguments! The correct format is \`${prefix}deploy <guild/global>\``

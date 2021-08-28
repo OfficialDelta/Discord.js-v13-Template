@@ -1,4 +1,6 @@
-module.exports = {
+const SubCommand = require('../../templates/SubCommand')
+
+module.exports = new SubCommand({
     async execute(interaction) {
         const input = interaction.options.get('input')?.value ?? false
 
@@ -6,4 +8,4 @@ module.exports = {
 
         interaction.reply(response)
     },
-}
+})

@@ -2,7 +2,7 @@
  * Base class for all commands
  * @abstract
  */
-class BaseCommand {
+module.exports = class BaseCommand {
     /**
      * @param {{name: String, description: String, execute: Function}} object
      */
@@ -33,5 +33,3 @@ class BaseCommand {
         this.execute = executeFunction
     }
 }
-
-module.exports = BaseCommand
