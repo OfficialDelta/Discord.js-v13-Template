@@ -1,4 +1,4 @@
 {
-    "token": "insert-token-here",
+    "token": "insert-token-here-or-remove-me",
     "prefix": "insert-prefix-here (for deploying slash commands/any non-slash commands)"
 }
