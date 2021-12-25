@@ -4,7 +4,9 @@
 module.exports = class SubCommand {
     /**
      * 
-     * @param {{execute: Function}} options - The options for the subcommand
+     * @param {{
+     *      execute: Function
+     *  }} options - The options for the subcommand
      */
     constructor(options) {
         this.execute = options.execute
