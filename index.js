@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { Client, Intents, Collection } = require('discord.js')
 const { readdirSync } = require('fs')
 const { token } = require('./config.json') || process.env
