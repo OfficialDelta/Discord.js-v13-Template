@@ -1,4 +1,5 @@
 const Event = require('../templates/Event')
+const { prefix } = require('../config.json')
 
 module.exports = new Event({
     name: 'messageCreate',
