@@ -4,7 +4,11 @@
  */
 module.exports = class BaseCommand {
     /**
-     * @param {{name: String, description: String, execute: Function}} object
+     * @param {{
+     *      name: String,
+     *      description: String,
+     *      execute: Function
+     *  }} object
      */
     constructor(object) {
         this.name = object.name

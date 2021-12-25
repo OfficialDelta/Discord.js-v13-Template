@@ -3,7 +3,11 @@
  */
 module.exports = class Event {
     /**
-     * @param {{name: String, once: Boolean, execute: Function}} object
+     * @param {{
+     *      name: String,
+     *      once?: Boolean,
+     *      execute: Function
+     *  }} object
      */
     constructor(options) {
         this.name = options.name

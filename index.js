@@ -1,7 +1,6 @@
 const { Client, Intents, Collection } = require('discord.js')
 const { readdirSync } = require('fs')
 const { token } = require('./config.json') || process.env
-const { prefix } = require('./config.json')
 
 // Discord client object
 global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES], partials: ['CHANNEL'] })
@@ -25,7 +24,7 @@ for (const file of msgCommandFiles) {
 }
 
 // Event handling
-const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'))
+const eventFiles = readdirSync('./events').filter(file => file.endsWith('.js'))
 
 for (const file of eventFiles) {
     const event = require(`./events/${file}`)

@@ -1,6 +1,6 @@
-const SlashCommand = require('../templates/SlashCommand')
+const ApplicationCommand = require('../templates/ApplicationCommand')
 
-module.exports = new SlashCommand({
+module.exports = new ApplicationCommand({
     name: 'subcommandtest',
     description: 'Test for sub commands',
     options: [

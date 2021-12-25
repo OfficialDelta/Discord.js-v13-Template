@@ -1,7 +1,7 @@
 const { MessageActionRow, MessageButton, MessageSelectMenu } = require('discord.js')
-const SlashCommand = require('../templates/SlashCommand')
+const ApplicationCommand = require('../templates/ApplicationCommand')
 
-module.exports = new SlashCommand({
+module.exports = new ApplicationCommand({
     name: 'interactiontest',
     description: 'A test command for interactions',
     async execute(interaction) {
