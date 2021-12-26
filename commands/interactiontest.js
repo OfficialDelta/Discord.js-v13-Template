@@ -4,6 +4,7 @@ const ApplicationCommand = require('../templates/ApplicationCommand')
 module.exports = new ApplicationCommand({
     name: 'interactiontest',
     description: 'A test command for interactions',
+    type: 'CHAT_INPUT',
     async execute(interaction) {
         const row1 = new MessageActionRow()
             .addComponents([

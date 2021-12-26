@@ -26,9 +26,11 @@ module.exports = new ApplicationCommand({
             required: false,
         }
     ],
+    defaultPermission: true, // whether or not the command is enabled by default for @everyone
+    type: 'CHAT_INPUT', // the type of command
     async execute(interaction) {
         // code to run when the command is executed
         // example code
         await interaction.reply('Pong!')
-    },
+    }
 })

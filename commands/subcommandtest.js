@@ -3,6 +3,7 @@ const ApplicationCommand = require('../templates/ApplicationCommand')
 module.exports = new ApplicationCommand({
     name: 'subcommandtest',
     description: 'Test for sub commands',
+    type: 'CHAT_INPUT',
     options: [
         {
             name: 'test',
