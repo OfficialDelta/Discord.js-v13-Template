@@ -5,7 +5,7 @@ module.exports = class Event {
     /**
      * @param {{
      *      name: String,
-     *      once: (Boolean|undefined),
+     *      once?: (Boolean|undefined),
      *      execute: Function
      *  }} object
      */
