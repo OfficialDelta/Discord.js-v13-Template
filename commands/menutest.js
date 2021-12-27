@@ -7,7 +7,6 @@ module.exports = new ApplicationCommand({
     description: 'A test command for menus',
     type: 'CHAT_INPUT',
     async execute(interaction) {
-        interaction.deferReply()
         const menu = new Menu(interaction.channel, interaction.user.id, [
             {
                 name: '1',
@@ -32,7 +31,7 @@ module.exports = new ApplicationCommand({
                 buttonActions: [
                     {
                         customId: 'right',
-                        action: '1'
+                        action: '2'
                     },
                     {
                         customId: 'stop',
@@ -71,7 +70,7 @@ module.exports = new ApplicationCommand({
                     }
                 ]
             }
-        ], 60 * 1000, 15 * 1000)
+        ], 60 * 1000, 15 * 1000, interaction)
 
         menu.start()
     }
