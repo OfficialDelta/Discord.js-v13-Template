@@ -21,7 +21,7 @@
   "homepage": "https://github.com/TSLARoadster/Discord.js-v13-Template#readme",
   "dependencies": {
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.1"
   },
   "devDependencies": {
     "eslint": "^8.11.0"
